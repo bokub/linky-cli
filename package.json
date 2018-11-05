@@ -1,7 +1,7 @@
 {
   "name": "linky-cli",
-  "description": "Easily retrieve your Linky power consumption",
-  "version": "0.1.0",
+  "description": "A CLI tool to retrieve your Linky power consumption",
+  "version": "0.1.1",
   "author": "bokub",
   "bin": {
     "linky": "index.js"
@@ -21,7 +21,7 @@
     "node": ">= 7.6.0"
   },
   "files": [
-    "index.js"
+    "index.js", "src"
   ],
   "homepage": "https://github.com/bokub/linky-cli",
   "keywords": [
