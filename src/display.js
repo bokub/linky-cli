@@ -2,9 +2,16 @@ const chalk = require('chalk');
 
 module.exports = data => {
 	const len = isSameHour(data) ? 10 : 19;
-	console.info(chalk`{yellow.underline Date${' '.repeat(len - 4)}} {blue.underline Value (kWh)}`);
+	const max = Math.max(...data.map(x => x.value));
+	const chartLength = 30;
+	// Headers
+	console.info(chalk`{yellow.underline Date${' '.repeat(len - 4)}} {blue.underline Value (kWh)} ` +
+		chalk`{cyan.underline Chart${' '.repeat(chartLength - 5)}}`);
+
 	for (const line of data) {
-		console.info(chalk`{yellow ${line.date.substr(0, len)}} {blue ${line.value}}`);
+		console.info(chalk.yellow(line.date.substr(0, len)) + ' ' +
+			chalk.blue(line.value) + ' '.repeat(12 - (line.value === null ? 4 : line.value.toString().length)) +
+            chalk.cyan('■'.repeat((max && line.value) ? Math.ceil(chartLength * line.value / max) : 0)));
 	}
 };
 

@@ -21,7 +21,8 @@
     "node": ">= 7.6.0"
   },
   "files": [
-    "index.js", "src"
+    "index.js",
+    "src"
   ],
   "homepage": "https://github.com/bokub/linky-cli",
   "keywords": [
