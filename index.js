@@ -4,6 +4,7 @@ const meow = require('meow');
 const linky = require('@bokub/linky');
 const chalk = require('chalk');
 const validate = require('./src/validate');
+const display = require('./src/display');
 
 const cli = meow(`
     Usage
@@ -57,7 +58,7 @@ if (validationResult.error) {
 }
 
 main(cli).then(data => {
-	console.log(data);
+	display(data);
 }).catch(err => {
 	console.error(chalk.red(err));
 	process.exit(1);
