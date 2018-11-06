@@ -14,6 +14,9 @@ const schema = Joi.object().keys({
 }).options({stripUnknown: true});
 
 module.exports = input => {
+	if (input.input.length === 0) {
+		return {error: true, message: 'You need to choose between "hour", "day", "month" and "year"'};
+	}
 	const res = Joi.validate(input, schema);
 	if (res.error && res.error.details && res.error.details.length > 0) {
 		res.message = res.error.details[0].message;
