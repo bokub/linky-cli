@@ -10,7 +10,7 @@ const validate = require('./src/validate');
 
 const cli = meow(`
     Usage
-      $ linky <hour|day|month|year> -u <email> -p <password>
+      $ linky (hour|day|month|year) -u <email> -p <password> [options]
 
     Options
       --user        -u    Linky client area e-mail

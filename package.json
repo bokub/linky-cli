@@ -1,7 +1,7 @@
 {
   "name": "linky-cli",
   "description": "A CLI tool to retrieve your Linky power consumption",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": "bokub",
   "bin": {
     "linky": "index.js"
@@ -27,7 +27,9 @@
   ],
   "homepage": "https://github.com/bokub/linky-cli",
   "keywords": [
+    "api",
     "cli",
+    "consumption",
     "enedis",
     "linky",
     "power"
