@@ -27,11 +27,13 @@ $ linky --help
     Options
       --user        -u    Linky client area e-mail
       --password    -p    Linky client area password
+      --output      -o    Export data to JSON file
       --start       -s    Start of the custom time period (DD/MM/YYYY)
       --end         -e    End of the custom time period (DD/MM/YYYY)
 
     Examples
       $ linky month -u me@example.com -p password123
+      $ linky hour -u me@example.com -p password123 -o ../export/hourly-data.json
       $ linky day -u me@example.com -p password123 -s 24/08/2018 -e 06/09/2018
 
 ```

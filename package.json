@@ -10,9 +10,10 @@
   "dependencies": {
     "@bokub/linky": "^0.1.0",
     "chalk": "^2.4.1",
-    "joi": "^14.0.4",
+    "joi": "^14.0.6",
     "joi-date-extensions": "^1.2.0",
-    "meow": "^5.0.0"
+    "meow": "^5.0.0",
+    "mkdirp": "^0.5.1"
   },
   "devDependencies": {
     "xo": "^0.23.0"

@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 'use strict';
+
 const meow = require('meow');
 const linky = require('@bokub/linky');
 const chalk = require('chalk');
-const validate = require('./src/validate');
 const display = require('./src/display');
+const save = require('./src/save');
+const validate = require('./src/validate');
 
 const cli = meow(`
     Usage
@@ -13,17 +15,20 @@ const cli = meow(`
     Options
       --user        -u    Linky client area e-mail
       --password    -p    Linky client area password
+      --output      -o    Export data to JSON file
       --start       -s    Start of the custom time period (DD/MM/YYYY)
       --end         -e    End of the custom time period (DD/MM/YYYY)
 
     Examples
       $ linky month -u me@example.com -p password123
+      $ linky hour -u me@example.com -p password123 -o ../export/hourly-data.json
       $ linky day -u me@example.com -p password123 -s 24/08/2018 -e 06/09/2018
 `, {
 	description: false,
 	flags: {
 		user: {type: 'string', alias: 'u'},
 		password: {type: 'string', alias: 'p'},
+		output: {type: 'string', alias: 'o'},
 		start: {type: 'string', alias: 's'},
 		end: {type: 'string', alias: 'e'}
 	}
@@ -58,6 +63,7 @@ if (validationResult.error) {
 }
 
 main(cli).then(data => {
+	save(data, cli.flags.output);
 	display(data);
 }).catch(err => {
 	console.error(chalk.red(err));

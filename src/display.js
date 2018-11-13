@@ -5,7 +5,7 @@ module.exports = data => {
 	const max = Math.max(...data.map(x => x.value));
 	const chartLength = 30;
 	// Headers
-	console.info(chalk`{yellow.underline Date${' '.repeat(len - 4)}} {blue.underline Value (kWh)} ` +
+	console.info(chalk`\n{yellow.underline Date${' '.repeat(len - 4)}} {blue.underline Value (kWh)} ` +
 		chalk`{cyan.underline Chart${' '.repeat(chartLength - 5)}}`);
 
 	for (const line of data) {
@@ -17,7 +17,6 @@ module.exports = data => {
 
 function isSameHour(data) {
 	const firstHour = data.length > 0 ? data[0].date.substr(11, 8) : '';
-	console.log(firstHour);
 	for (const line of data) {
 		if (line.date.substr(11, 8) !== firstHour) {
 			return false;
