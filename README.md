@@ -8,6 +8,8 @@
 
 #### If you are looking for a Node.js module, check out  [@bokub/linky](https://github.com/bokub/linky)
 
+![Screenshot](https://i.imgur.com/vhqqPYz.png)
+
 
 ## Install
 
