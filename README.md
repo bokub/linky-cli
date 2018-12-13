@@ -43,6 +43,7 @@ Default time period: *Yesterday*
 ### `linky week [options]`
 
 Retrieve power consumption with a step of 1 day
+
 You **cannot** retrieve more than 31 days at once
 
 Default time period: *Last 31 days*
@@ -50,6 +51,7 @@ Default time period: *Last 31 days*
 ### `linky month [options]`
 
 Retrieve power consumption with a step of 1 month
+
 You **cannot** retrieve more than 12 months at once
 
 Default time period: *Last 12 months*
@@ -64,5 +66,5 @@ You cannot use a custom time period
 [build-href]: https://travis-ci.org/bokub/linky-cli
 [version-src]: https://flat.badgen.net/npm/v/linky-cli
 [version-href]: https://www.npmjs.com/package/linky-cli
-[engine-src]: https://flat.badgen.net/npm/node/linky-cli
+[engine-src]: https://flat.badgen.net/npm/node/linky-cli?color=cyan
 [engine-href]: https://www.npmjs.com/package/linky-cli
