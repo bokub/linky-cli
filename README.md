@@ -21,16 +21,19 @@ $ npm i -g linky-cli
 ## Usage
 
 ```sh
-# Basic usage
+# Basic usage (interactive)
+linky
+
+# Basic usage (no questions asked)
 linky (hour|day|month|year) -u <email> -p <password>
 
 # Save data to file with -o
-linky (hour|day|month|year) -u <email> -p <password> [-o <path>]
+linky -o <path>
 
 # Custom time period with -s (start) and -e (end)
-linky (hour|day|month|year) -u <email> -p <password> [-s <DD/MM/YYYY>] [-e <DD/MM/YYYY>]
+linky -s <DD/MM/YYYY> -e <DD/MM/YYYY>
 
-# Show help and examples
+# Show help and more examples
 linky --help
 ```
 
