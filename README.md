@@ -27,7 +27,7 @@ linky
 # Basic usage (no questions asked)
 linky (hour|day|month|year) -u <email> -p <password>
 
-# Save data to file with -o
+# Save data to JSON file with -o
 linky -o <path>
 
 # Custom time period with -s (start) and -e (end)

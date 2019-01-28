@@ -6,8 +6,8 @@ module.exports = async cli => {
 		const answers = await inquirer.prompt([{
 			type: 'list',
 			name: 'interval',
-			message: 'Select an step duration',
-			choices: [{value: 'hour', name: 'hour (actually 30 minutes)'}, 'day', 'month', 'year']
+			message: 'Select a step duration',
+			choices: [{value: 'hour', name: 'half hour'}, 'day', 'month', 'year']
 		}]);
 		cli.input = [answers.interval];
 	}
