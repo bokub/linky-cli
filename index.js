@@ -4,6 +4,8 @@
 const meow = require('meow');
 const linky = require('@bokub/linky');
 const chalk = require('chalk');
+const ora = require('ora');
+
 const display = require('./src/display');
 const inquire = require('./src/inquire');
 const save = require('./src/save');
@@ -52,8 +54,25 @@ async function main(cli) {
 		process.exit(1);
 	}
 
-	const data = await getData(cli);
-	await save(data, cli.flags.output);
+	let data = null;
+	const spinner = ora().start('Retrieving consumption');
+	try {
+		data = await getData(cli);
+		spinner.succeed('Consumption retrieved');
+	} catch (e) {
+		spinner.fail('Cannot retrieve consumption');
+		throw (e);
+	}
+	if (cli.flags.output) {
+		spinner.start('Saving to file');
+		try {
+			await save(data, cli.flags.output);
+			spinner.succeed('Saved to ' + cli.flags.output);
+		} catch (e) {
+			spinner.fail('Cannot save data to file');
+			throw (e);
+		}
+	}
 
 	display(data);
 }

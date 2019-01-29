@@ -37,13 +37,13 @@ linky -s <DD/MM/YYYY> -e <DD/MM/YYYY>
 linky --help
 ```
 
-### `linky hour [options]`
+#### `linky hour [options]`
 
 Retrieve power consumption with a step of 30 minutes
 
 Default time period: *Yesterday*
 
-### `linky week [options]`
+#### `linky week [options]`
 
 Retrieve power consumption with a step of 1 day
 
@@ -51,7 +51,7 @@ You **cannot** retrieve more than 31 days at once
 
 Default time period: *Last 31 days*
 
-### `linky month [options]`
+#### `linky month [options]`
 
 Retrieve power consumption with a step of 1 month
 
@@ -59,7 +59,7 @@ You **cannot** retrieve more than 12 months at once
 
 Default time period: *Last 12 months*
 
-### `linky year [options]`
+#### `linky year [options]`
 
 Retrieve **all** your power consumption with a step of 1 year
 
@@ -67,7 +67,7 @@ You cannot use a custom time period
 
 [build-src]: https://flat.badgen.net/travis/bokub/linky-cli
 [build-href]: https://travis-ci.org/bokub/linky-cli
-[version-src]: https://flat.badgen.net/npm/v/linky-cli
+[version-src]: https://flat.badgen.net/npm/v/linky-cli?color=cyan
 [version-href]: https://www.npmjs.com/package/linky-cli
-[engine-src]: https://flat.badgen.net/npm/node/linky-cli?color=cyan
+[engine-src]: https://flat.badgen.net/npm/node/linky-cli?color=orange
 [engine-href]: https://www.npmjs.com/package/linky-cli
