@@ -3,12 +3,13 @@
 [![Version][version-src]][version-href]
 [![Build Status][build-src]][build-href]
 [![Engines][engine-src]][engine-href]
+![Code style][style-src]
 
 > A CLI tool to retrieve your Linky power consumption
 
 #### If you are looking for a Node.js module, check out  [@bokub/linky](https://github.com/bokub/linky)
 
-![Screenshot](https://i.imgur.com/vhqqPYz.png)
+![Screenshot](https://i.imgur.com/BajiVfu.png)
 
 
 ## Install
@@ -69,5 +70,6 @@ You cannot use a custom time period
 [build-href]: https://travis-ci.org/bokub/linky-cli
 [version-src]: https://flat.badgen.net/npm/v/linky-cli?color=cyan
 [version-href]: https://www.npmjs.com/package/linky-cli
-[engine-src]: https://flat.badgen.net/npm/node/linky-cli?color=orange
+[engine-src]: https://flat.badgen.net/badge/node/%3E=%207.6.0?color=orange
 [engine-href]: https://www.npmjs.com/package/linky-cli
+[style-src]: https://flat.badgen.net/badge/code%20style/XO?color=5ED9C7
