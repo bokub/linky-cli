@@ -9,7 +9,7 @@
 
 #### If you are looking for a Node.js module, check out  [@bokub/linky](https://github.com/bokub/linky)
 
-![Screenshot](https://i.imgur.com/BajiVfu.png)
+![Screenshot](https://i.imgur.com/Ma925qB.png)
 
 
 ## Install
