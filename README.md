@@ -44,7 +44,7 @@ Retrieve power consumption with a step of 30 minutes
 
 Default time period: *Yesterday*
 
-#### `linky week [options]`
+#### `linky day [options]`
 
 Retrieve power consumption with a step of 1 day
 
