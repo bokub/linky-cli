@@ -7,7 +7,13 @@
 
 > A CLI tool to retrieve your Linky power consumption
 
-#### If you are looking for a Node.js module, check out  [@bokub/linky](https://github.com/bokub/linky)
+| This tool is deprecated and does not work anymore. You can use [linky](https://github.com/bokub/linky) instead |
+| --- |
+
+| Cet outil ne fonctionne plus et n'est plus maintenu. Utilisez plutôt [linky](https://github.com/bokub/linky) ! |
+| --- |
+
+_____
 
 ![Screenshot](https://i.imgur.com/Ma925qB.png)
 
